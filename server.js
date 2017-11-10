@@ -16,10 +16,15 @@ app.use(apiRoutes);
 //========  MONGO MONGOOSE =======//
 mongoose.Promise = global.Promise;
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytreact";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_2b2m4m3s:82cgjc0ju9lpthubm7skqhhkbg@ds255715.mlab.com:55715/heroku_2b2m4m3s";
 mongoose.connect(MONGODB_URI, {
   useMongoClient: true
 });
+
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytreact";
+// mongoose.connect(MONGODB_URI, {
+//   useMongoClient: true
+// });
 
 var db = mongoose.connection;
 
