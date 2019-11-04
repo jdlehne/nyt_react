@@ -20,6 +20,6 @@
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "mongoose": "^4.13.1"
+    "mongoose": "^5.7.5"
   }
 }
